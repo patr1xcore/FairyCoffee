@@ -1,12 +1,13 @@
 // MENU LINKS - SCROLL ANIMATION
 
 $(document).ready(function() {
-    var menu = $('.header_navigation, .header_content'),
+    var menu = $('.header_navigation, .header_navigation-hidden, .header_content'),
 
         menuLinks = menu.find('a');
 
     menuLinks.on('click', function(event) {
         $('html,body').animate({scrollTop: $(this.hash).offset().top}, 500);
+        $('.header_navigation-hidden').fadeOut();
         event.preventDefault();
     });
 });
@@ -31,6 +32,7 @@ $(document).ready(function(){
     autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: false,
+    pauseOnFocus: false,
     arrows: false
   });
 });
