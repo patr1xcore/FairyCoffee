@@ -15,6 +15,10 @@
         @media only screen and (max-width: 480px) {
             font-size: 7.25rem;
         }
+        
+        @media only screen and (max-width: 430px) {
+            width: 26rem;
+        }
     }
     
     &_boxes {
