@@ -1,0 +1,77 @@
+.branch {
+    background-image: linear-gradient(rgba(#000, .9), rgba(#000, .9)), url(../img/branch_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: $color-tertiary;
+    box-shadow: 3px 3px 3px rgba(#000, .25);
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        
+        @media only screen and (max-width: 800px) {  
+            display: block; 
+        }
+        
+        @media only screen and (max-width: 480px) {
+            padding: 4rem 5rem;
+        }
+    }
+    
+    &_heading {
+        display: inline;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+    
+    &_line {
+        display: block;
+        width: 41rem;
+        height: 1px;
+        color: $color-tertiary;
+        margin-bottom: 4rem;
+        
+        @media only screen and (max-width: 360px) {
+            width: 32rem;
+        }
+    }
+    
+    &_content_left {
+        width: 41rem;
+        
+        @media only screen and (max-width: 800px) {
+            margin: 0 auto 6rem auto;
+        }
+        
+        @media only screen and (max-width: 360px) {
+            width: 32rem;
+            
+        }
+    }
+    
+    &_opened-details {
+        display: flex;
+        font-size: 2rem;
+        justify-content: space-between;
+    }
+    
+    &_content_right {
+        width: 41rem;
+        
+        @media only screen and (max-width: 800px) {
+            margin: 0 auto;
+        }
+        
+        @media only screen and (max-width: 360px) {
+            width: 32rem;
+        }
+        
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            box-shadow: 3px 3px 3px rgba(#000, .25);
+        }
+    }
+}

@@ -1,0 +1,201 @@
+.header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(#000, .5), rgba(#000, .5)), url(../img/bg-coffee2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 3px rgba(#000, .25);
+    overflow: hidden;
+    
+    .container {
+        
+        @media only screen and (max-width: 480px) {
+            padding: 4rem 5rem;
+        }
+    }
+
+    &_heading-box {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &_logo-box {
+        position: relative;
+        
+        @media only screen and (max-width: 600px) {
+            margin: 0 auto;
+        }
+        
+        @media only screen and (max-width: 360px) {
+            margin: 0;
+        }
+    }
+    
+    &_logo_coffee-icon {
+        position: absolute;
+        top: 0rem;
+        left: 25.75rem;
+        font-size: 2.5rem;
+        color: $color-tertiary;
+        
+        @media only screen and (max-width: 360px) {
+            left: 21.75rem;
+        }
+    }
+
+    &_logo-heading {
+        font-size: 5rem;
+        font-weight: 300;
+        color: $color-tertiary;
+        align-self: center;
+        
+        @media only screen and (max-width: 360px) {
+            font-size: 4.25rem;
+        }
+        
+    }
+
+    &_logo-heading span {
+        color: $color-secondary;
+    }
+    
+    &_hamburger-hidden {
+        display: none;
+        
+        @media only screen and (max-width: 800px) {
+            display: block;
+            position: absolute;
+            top: 9.25rem;
+            right: 3rem;
+            z-index: 202;
+        }
+        
+        @media only screen and (max-width: 480px) {
+            top: 5.5rem;
+        }  
+    }
+    
+    &_hamburger {
+        font-size: 5rem;
+        color: #ECF0F1;
+        
+    }
+    
+    &_navigation-hidden {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        background: $color-primary;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        transform: translate(-50%, 0);
+        z-index: 200;
+        
+        li {
+            padding: 2rem;
+        }
+        
+        li a {
+        font-size: 3rem;
+        color: $color-tertiary;
+        text-transform: uppercase;
+        }
+    }
+
+    &_navigation {
+        display: flex;
+        align-items: center;
+        margin-right: 2.5rem;
+        
+        @media only screen and (max-width: 800px) {
+            display: none;
+        }
+
+    li {
+        transition: all 0.25s;
+    }
+
+    li a {
+        font-size: 2rem;
+        color: $color-tertiary;
+        text-transform: uppercase;
+        margin-right: 4rem;
+    }
+
+    li:hover {
+         transform: translateY(-3px);
+    }
+
+    li:last-child a {
+         margin-right: 0;
+        }
+    }
+
+    &_content {
+        margin-top: 11rem;
+        
+        @media only screen and (max-width: 600px) {
+            text-align: center;
+        }
+    }
+
+    &_heading-secondary {
+        font-size: 2rem;
+        color: $color-secondary;
+        text-transform: uppercase;
+        
+        @media only screen and (max-width: 600px) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &_heading-primary {
+        font-family: $font-primary;
+        font-size: 4rem;
+        letter-spacing: 4px;
+        color: $color-tertiary;
+        margin-top: -0.75rem;
+        margin-bottom: 5rem;
+    }
+
+    &_btn {
+        display: inline-block;
+        font-size: 1.6rem;
+        background: linear-gradient(135deg, rgb(142,40,0) 0%, rgb(182,73,38) 100%);
+        color: $color-tertiary;
+        text-transform: uppercase;
+        box-shadow: 3px 3px 3px rgba(#000, .25);
+        border-radius: 5rem;
+        transition: all 0.25s;
+        padding: 2rem 8rem;
+        
+        @media only screen and (max-width: 480px) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &_btn:hover {
+        transform: scale(1.05);
+    }
+
+    &_content span {
+        font-size: 1.6rem;
+        color: $color-tertiary;
+        margin: 0 1.3rem 0 1.6rem;
+        
+        @media only screen and (max-width: 480px) {
+            display: block;
+        }
+    }
+
+    &_content #downloadMenu {
+        font-size: 1.6rem;
+        color: $color-tertiary;
+        text-decoration: underline;
+    }
+}

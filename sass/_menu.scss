@@ -1,0 +1,93 @@
+.menu {
+    
+    .container {
+        padding: 0;
+    }
+    
+    &_cards-list {
+        display: flex;
+        justify-content: space-between;
+        
+        @media only screen and (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    &_cards {
+        position: relative;
+        display: flex;
+        width: 44rem;
+        height: 50rem;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 3px 3px 3px rgba(#000, .25);
+        justify-content: center;
+        overflow: hidden;
+        
+        @media only screen and (max-width: 600px) {
+            margin-bottom: 2rem;
+        }
+        
+        &:last-child {
+            margin-bottom: 0rem;
+        }
+    }
+    
+    &_cards:hover {
+        
+        .menu_card-heading {
+            bottom: 75%;
+        }
+        
+        .menu_products_hidden {
+            max-height: 7.5rem;
+        }
+    }
+    
+    &_card-1 { background-image: linear-gradient(rgba(#000, .75), rgba(#000, .75)), url(../img/menu_bg-1.jpg); }
+    
+    &_card-2 { background-image: linear-gradient(rgba(#000, .75), rgba(#000, .75)), url(../img/menu_bg-2.jpg); }
+    
+    &_card-3 { background-image: linear-gradient(rgba(#000, .75), rgba(#000, .75)), url(../img/menu_bg-3.jpg); }
+    
+    &_card-heading {
+        position: absolute;
+        bottom: 2.5%;
+        font-size: 3rem;
+        color: $color-tertiary;
+        text-transform: uppercase;
+        text-align: center;
+        transition: bottom .8s;
+        margin-bottom: 2rem;
+    }
+    
+    &_line {
+        display: block;
+        width: 36rem;
+        height: 1px;
+        color: $color-tertiary;
+        
+        @media only screen and (max-width: 800px) {
+            width: 26rem;
+        }
+    }
+    
+    &_products_hover-hidden {
+        display: flex;
+        position: absolute;
+        bottom: -4rem;
+        width: 100%;
+        max-height: 0;
+        font-size: 1.6rem;
+        transition: all .8s;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    
+    &_product {
+        display: flex;
+        justify-content: space-between;
+    }
+}

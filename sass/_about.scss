@@ -1,0 +1,29 @@
+.about {
+    text-align: center;
+    
+    .container {
+    
+    @media only screen and (max-width: 480px) {
+        padding: 4rem 0;
+    }
+    }
+    
+    &_heading {
+        
+        @media only screen and (max-width: 800px) {
+            letter-spacing: -0.5px;
+        }
+        
+        @media only screen and (max-width: 480px) {
+            font-size: 7.25rem;
+        }
+    }
+    
+    &_text {
+        width: 80%;
+        font-family: $font-primary;
+        font-size: 2.25rem;
+        text-justify: inter-word;
+        margin: 0 auto 6rem auto;
+    }
+}

@@ -1,0 +1,112 @@
+.reviews {
+    text-align: center;
+    
+    .container {
+        padding: 6rem 10rem 8rem 10rem;
+        
+        @media only screen and (max-width: 480px) {
+            padding: 4rem 5rem;
+        }
+    }
+    
+    &_heading {
+        margin-bottom: 5rem;
+        
+        @media only screen and (max-width: 480px) {
+            font-size: 7.25rem;
+        }
+    }
+    
+    &_boxes {
+        display: inline-flex;
+        width: 100%;
+        height: 42rem;
+        background: #ccc;
+        margin-bottom: 8rem;
+        
+        @media only screen and (max-width: 600px) {
+            margin-bottom: 7rem;
+        }
+        
+        @media only screen and (max-width: 360px) {
+            height: 100%;
+        }
+    }
+    
+    &_product {
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        width: 60rem;
+        height: 100%;
+        justify-content: center;
+        overflow: hidden;
+        
+        @media only screen and (max-width: 600px) {
+            display: none;
+        }
+    }
+    
+    &_product-image {
+        height: 100%;
+        z-index: 1;
+    }
+    
+    &_product-name {
+        position: absolute;
+        top: -16px;
+        left: 50%;
+        font-size: 2rem;
+        color: $color-primary;
+        background: $color-tertiary;
+        border-radius: 0.75rem;
+        transform: translate(-50%, 0);
+        padding: 2.5rem 4rem 1.5rem 4rem;
+        z-index: 2;
+    }
+    
+    &_product-hidden {
+        display: none;
+        
+        @media only screen and (max-width: 600px) {
+            display: inline-block;
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-orientation: upright;
+            writing-mode: vertical-rl;
+            color: $color-tertiary;
+            background: $color-primary;
+        }
+    }
+    
+    &_content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 1.8rem;
+        text-align: left;
+        justify-content: space-between;
+        padding: 2rem 2rem;
+        margin: 0 auto;
+    }
+    
+    &_review {
+        background: #ECF0F1;
+        width: 100%;
+        box-shadow: 3px 3px 3px rgba(#000, .125);
+        padding: 1rem 2rem;
+    }
+    
+    &_review-rating {
+        color: $color-primary;
+    }
+    
+    &_review-text {
+        display: block;
+    }
+    
+    &_review-person {
+        color: $color-primary;
+    }
+}

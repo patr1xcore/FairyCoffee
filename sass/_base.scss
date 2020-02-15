@@ -1,0 +1,94 @@
+/* FONT VARIABLES */
+
+$font-primary: 'Quicksand', sans-serif;
+$font-secondary: 'Sacramento', cursive;
+
+/* COLOR VARIABLES */
+
+$color-primary: #8E2800;
+$color-secondary: #B64926;
+$color-tertiary: #FFF0A5;
+
+/* GENERAL */
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%; // 10px -> 1rem
+    box-sizing: border-box;
+    
+    @media only screen and (max-width: 1280px) {
+        font-size: 50%;
+    }
+    
+    @media only screen and (max-width: 1025px) {
+        font-size: 45%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: 300;
+    line-height: 1.6;
+    background: #ECF0F1;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    font-family: $font-primary;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+.container {
+    padding: 8rem 10rem;
+    margin: 0 auto;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 5px;
+    display: block;
+    font-size: 8rem;
+    color: $color-primary;
+    opacity: 0.9;
+    z-index: 30;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+    transition: all 0.25s;
+    opacity: 1;
+}
+
+.hehe {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
