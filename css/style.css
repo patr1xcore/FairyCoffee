@@ -82,7 +82,7 @@ a {
   margin-bottom: 4rem; }
 
 .header {
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg-coffee2.jpg);
   background-size: cover;
   background-position: center;
@@ -354,14 +354,15 @@ a {
     display: inline-flex;
     flex-direction: column;
     width: 60rem;
-    height: 100%;
     justify-content: center;
     overflow: hidden; }
     @media only screen and (max-width: 600px) {
       .reviews_product {
         display: none; } }
   .reviews_product-image {
-    height: 100%;
+    height: 42rem;
+    object-fit: cover;
+    object-position: center;
     z-index: 1; }
   .reviews_product-name {
     position: absolute;
