@@ -51,9 +51,6 @@ a {
   transition: all 0.25s;
   opacity: 1; }
 
-.hehe {
-  display: block; }
-
 .link {
   font-size: 1.75rem;
   color: #8E2800;
@@ -407,6 +404,10 @@ a {
     display: block; }
   .reviews_review-person {
     color: #8E2800; }
+
+.autoplay {
+  height: 42rem;
+  margin-bottom: 8rem; }
 
 .branch {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/branch_bg.jpg);
